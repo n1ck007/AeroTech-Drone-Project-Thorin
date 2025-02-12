@@ -1,0 +1,3 @@
+[submodule "AeroTech-Drone-Project"]
+	path = AeroTech-Drone-Project
+	url = https://github.com/CSE4380-Spring-2025/AeroTech-Drone-Project.git
