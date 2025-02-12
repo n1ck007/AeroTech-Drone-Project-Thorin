@@ -1,6 +1,13 @@
 \documentclass{article}
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{makecell}
+
+\renewcommand{\theadfont}{\normalsize\bfseries}
 
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
@@ -9,6 +16,10 @@
 \title{System Documentation}
 \author{}
 \date{}
+
+% Colors for Security Categorizations
+\definecolor{navyblue}{RGB}{0,0,128}
+\definecolor{lightgray}{RGB}{211,211,211}
 
 \begin{document}
 
@@ -57,9 +68,87 @@ Detailed flow between onboard sensors, processors, storage, and communication sy
 
 \subsection{Impact Levels (Confidentiality, Integrity, Availability)}
 
-\subsection{Overall Categorization}
+% table goes here
+\begin{center}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{|p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+    \hline
+    \rowcolor{navyblue!80}
+    \color{white}\textbf{Information Types} & 
+    \color{white}\textbf{Confidentiality} & 
+    \color{white}\textbf{Integrity} & 
+    \color{white}\textbf{Availability} \\ \hline
+    
+    \makecell{Power Supply/\\Battery} & 
+    \makecell[l]{L\\ \scriptsize minimal impact due to 
+    \\\scriptsize information only of the 
+    \\\scriptsize battery itself } & 
+    \makecell[l]{L\\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{H\\ \scriptsize severe impact to the mission 
+    \\\scriptsize can no longer operate
+    \\\scriptsize drone without power} \\ \hline
+    
+    \makecell{Rotors /\\ ECU} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
 
+    \makecell{FILL} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
+
+    \makecell{FILL} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
+
+    \makecell{FILL} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
+
+    General-Information & L & L & L \\ \hline
+
+    \rowcolor{lightgray}
+    \multicolumn{3}{|l|}{\textbf{System Categorization}} & 
+    \cellcolor{lightgray} \\ \cline{1-3}
+    & Moderate & High & High \\ \hline
+    \end{tabular}
+\end{center}
+    
+\subsection{Overall Categorization}
+Overall Information System Impact: \textcolor{navyblue}{\textbf{High}}
+    
 \subsection{Justification}
+The SCADA system's High impact categorization derives from:
+
+\begin{itemize}
+\item Critical role in power distribution for military operations
+\item Potential for catastrophic consequences including infrastructure failure and loss of life
+\item Remote control capabilities affecting physical systems
+\item Real-time processing requirements for energy management
+\end{itemize}
 
 \section{Risk Management \& Compliance}
 
