@@ -13,7 +13,7 @@
 \renewcommand{\theadfont}{\normalsize\bfseries}
 
 % report title
-\title{Assignment 1 - System Categroization \\ \textit{Security Categorization}\\ CSE 4380}
+\title{Assignment 1 - System Categroization \\ \textit{System Description}\\ CSE 4380}
 
 \author{Group Thorin}
 
@@ -49,25 +49,26 @@ Instructor: & Trevor Bakker\end{tabular}
 \listoffigures
 \listoftables
 \newpage
+adwasd
 
-\section{Security Categorization}
+\section{System Description}
+\input{Components/system_description.tex}
 
-\subsection{Reference Standards}
-\begin{itemize}
-    \item FIPS 199: Security categorization for federal systems.
-    \item NIST SP 800-60: Mapping security categories to information types.
-\end{itemize}
+\subsection{Purpose and Capabilities}
+\input{Components/purpose_and_capabilities.tex}
 
-\subsection{Impact Levels (Confidentiality, Integrity, Availability)}
-\input{Components/impact_levels.tex}
+\subsection{System Components}
+\input{Components/system_componants.tex}
 
-\subsection{Overall Categorization}
+\subsubsection{Software Components}
+\input{Components/software_components.tex}
 
-\subsection{Justification}
+\subsubsection{Third-Party Components/Services}
+\input{Components/third_party_components.tex}
 
-\newpage
+\subsection{Stakeholders}
+\input{Components/stakeholders.tex}
 
-\section{Risk Management \& Compliance}
-
-Alignment with Risk Management Framework (RMF) per NIST SP 800-37. Categorization informs security control selection (NIST SP 800-53). Ongoing assessment and mitigation per FIPS 200 minimum security controls.
+\subsection{Operational Environment}
+\input{Components/operational_environment.tex}
 \end{document}
