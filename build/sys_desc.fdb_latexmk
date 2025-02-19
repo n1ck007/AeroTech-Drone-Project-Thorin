@@ -1,0 +1,23 @@
+# Fdb version 3
+["pdflatex"] 1739944036 "src/sys_desc.tex" "build/sys_desc.pdf" "sys_desc" 1739944037
+  "/etc/texmf/web2c/texmf.cnf" 1739402328 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1636758526 20144 8a7de377ae7a11ee924a7499611f5a9d ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1636758526 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1642022539 29921 f0f4f870357ebfb8fe58ed9ed4ee9b92 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1739412070 4379155 98693266ff65f58d9f98aff394de12d2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1739413830 2800240 478b0a9cace46d4369658dd82bbb0443 ""
+  "build/sys_desc.aux" 1739944037 832 cc60ed3a300df42f4a75dd5dd001b348 "pdflatex"
+  "src/sys_desc.tex" 1739943840 303 d79dea8f26fd494aeaf2c43300c77d6e ""
+  (generated)
+  "build/sys_desc.aux"
+  "build/sys_desc.log"
+  "build/sys_desc.pdf"
