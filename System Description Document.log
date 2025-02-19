@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.12)  17 FEB 2025 18:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.12)  18 FEB 2025 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,9 +316,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [3] (./Components/system_description.tex) (./Components/purpose_and_capabilities.tex) (./Components/system_componants.tex
 
-[4]) (./Components/software_components.tex) (./Components/third_party_components.tex) (./Components/stakeholders.tex) (./Components/operational_environment.tex)
+[4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (8.94034pt too wide) in paragraph at lines 64--68
+[]\OT1/cmr/m/n/10 https://www.epsilor.com/product/batteries-for-unmanned-aerial-systems-uas/batteries-for-tactical-and-
+ []
 
-[5] (./System Description Document.aux)
+
+
+[5]
+Overfull \hbox (82.74625pt too wide) in paragraph at lines 93--97
+[]\OT1/cmr/m/n/10 https://www.infinitioptics.com/sites/default/files/2023-06/Vega%20PTZ%20Series%20Brochure%202 10%20Jun2023.pdf[]
+ []
+
+) (./Components/software_components.tex
+
+[6]) (./Components/third_party_components.tex) (./Components/stakeholders.tex) (./Components/operational_environment.tex)
+
+[7] (./System Description Document.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -327,18 +341,18 @@ Package rerunfilecheck Info: File `"System Description Document".out' has not ch
 (rerunfilecheck)             Checksum: 6DB8375F92605B48FC8203894E466123;1046.
  ) 
 Here is how much of TeX's memory you used:
- 9814 strings out of 473201
- 151387 string characters out of 5720299
- 566883 words of memory out of 5000000
- 32937 multiletter control sequences out of 15000+600000
- 563439 words of font info for 51 fonts, out of 8000000 for 9000
+ 9831 strings out of 473201
+ 151667 string characters out of 5720299
+ 567883 words of memory out of 5000000
+ 32944 multiletter control sequences out of 15000+600000
+ 563774 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,789b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "System Description Document.pdf" (5 pages, 95427 bytes).
+ 75i,7n,79p,813b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "System Description Document.pdf" (7 pages, 118519 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
