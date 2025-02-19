@@ -1,7 +1,7 @@
 SRC_DIR = src
 BUILD_DIR = build
-SRC_FILES := $(wildcard $(SRC_DIR)/*.tex)
-DOCS := $(notdir $(SRC_FILES:.tex=))
+SRC_FILES := $(shell find $(SRC_DIR) -type f -name "*.tex")
+DOCS := $(patsubst $(SRC_DIR)/%,%,$(SRC_FILES:.tex=))
 
 # Compile all and rm artifacts except synctex
 .PHONY: all
@@ -19,8 +19,9 @@ artifacts: $(DOCS)
 
 # Compile indiviual files
 $(DOCS):
-	latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=$(BUILD_DIR) $(SRC_DIR)/$@.tex
+	mkdir -p $(BUILD_DIR)/$(dir $@)
+	latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=$(BUILD_DIR)/$(dir $@) $(SRC_DIR)/$@.tex
 
 .PHONY: clean
 clean:
-	rm -rf ${BUILD_DIR}
+	rm -rf $(BUILD_DIR)
