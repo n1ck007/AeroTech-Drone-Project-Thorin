@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.18)  18 FEB 2025 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.18)  18 FEB 2025 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -300,15 +300,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `"Security Categorization Whitepaper.toc"'.
 
- [2] (./Security Categorization Whitepaper.lof)
-\tf@lof=\write5
-\openout5 = `"Security Categorization Whitepaper.lof"'.
-
- (./Security Categorization Whitepaper.lot)
-\tf@lot=\write6
-\openout6 = `"Security Categorization Whitepaper.lot"'.
-
- [3]
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|\OT1/cmr/bx/n/10 Information
  []
@@ -418,7 +410,7 @@ Overfull \hbox (3.17557pt too wide) in paragraph at lines 166--166
 |[][]
  []
 
-[4]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 184--184
 []|\OT1/cmr/bx/n/10 Information
  []
@@ -443,7 +435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--220
 []|\OT1/cmr/m/n/10 General-
  []
 
-[5] [6] [7] (./Security Categorization Whitepaper.aux)
+[4] [5] [6] (./Security Categorization Whitepaper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -452,18 +444,18 @@ Package rerunfilecheck Info: File `"Security Categorization Whitepaper".out' has
 (rerunfilecheck)             Checksum: 6F10930BFE59ACB04320B27550887EC6;1158.
  ) 
 Here is how much of TeX's memory you used:
- 9643 strings out of 476076
- 147335 string characters out of 5793775
+ 9626 strings out of 476076
+ 146771 string characters out of 5793775
  1970187 words of memory out of 5000000
- 31643 multiletter control sequences out of 15000+600000
+ 31633 multiletter control sequences out of 15000+600000
  563006 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,18n,79p,481b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/bay/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Security Categorization Whitepaper.pdf" (7 pages, 111542 bytes).
+Output written on "Security Categorization Whitepaper.pdf" (6 pages, 111119 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

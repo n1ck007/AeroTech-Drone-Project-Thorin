@@ -1,6 +1,6 @@
-\contentsline {section}{\numberline {1}Security Categorization}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Reference Standards}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Impact Levels (Confidentiality, Integrity, Availability)}{5}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Overall Categorization}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Justification}{6}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Risk Management \& Compliance}{7}{section.2}%
+\contentsline {section}{\numberline {1}Security Categorization}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Reference Standards}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Impact Levels (Confidentiality, Integrity, Availability)}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Overall Categorization}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Justification}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Risk Management \& Compliance}{6}{section.2}%
