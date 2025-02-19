@@ -1,10 +1,22 @@
-# AeroTech-Drone-Project-Thorin
+# AeroTech-Drone-Project-Thorin #
 UTA CSE-4380, Information Security 1, AeroTech-Drone-Project
 
-# Assignment 1: Section Assignments
+## Assignment 1: Section Assignments ##
 - System Description: Ben
 - Data Flow Analysis: Eli & Obadah
 - Security Categorization: Nick & Betim
 
-# Development Configuration #
-To clone this repo with submodules included use `git clone --recursive <repository>`. If you've already cloned the repo and the submodule is empty use `git submodule update --init` to pull it down.
+## Project Configuration ##
+### Install LaTeX ###
+Install the full latex library of packages.
+- Linux: `sudo apt install texlive-full`
+- Mac: `brew install texlive`
+- Windows: https://tug.org/texlive/windows.html
+
+### Auto-Compile ###
+The project's `settings.json` is configured to autobuild when a `.tex` file is saved. All source files should be stored in the `src` directory. The generated PDFs and synctex files are store in the `build` directory.
+
+### Using SyncTex ###
+SyncTex allows you to quickly jump between the source code and the corresponding location in the PDF. 
+- Forward Search: `Ctrl+Alt+j` jump from `.tex` to PDF
+- Inverse search: `Ctrl-Click` jump from PDF to `.tex`

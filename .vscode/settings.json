@@ -1,0 +1,33 @@
+{
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.method": "glob",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.synctex.synctexjs.enabled": true,
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.recipe.default": "Build",
+  "latex-workshop.latex.build.forceRecipeUsage": true,
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Build",
+      "tools": [
+        "latexmk"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%WORKSPACE_FOLDER%/build",
+        "%DOC%"
+      ]
+    }
+  ]
+}
