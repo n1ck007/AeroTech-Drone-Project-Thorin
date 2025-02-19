@@ -13,7 +13,12 @@ Install the full latex library of packages.
 - Mac: `brew install texlive`
 - Windows: https://tug.org/texlive/windows.html
 
-### Using the Makefile ###
+### Compile and Preview ###
+The project's `settings.json` is configured to autobuild when a `.tex` file is saved. All source files should be stored in the `src` directory. The generated PDFs and `synctex` files are store in the `build` directory.
+
+You can use `Ctrl+Alt+j` shortcut bring up the code/preview split panel.
+
+### Compile with Makefile ###
 | Command       | Usage                                        |
 |---------------|----------------------------------------------|
 | `make`        | build all `.tex` files found in `src`        |
