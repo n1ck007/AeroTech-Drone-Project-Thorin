@@ -1,13 +1,18 @@
 {
-  "latex-workshop.latex.autoClean.run": "never",
-  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build",
-  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.method": "glob",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.synctex.synctexjs.enabled": true,
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.recipe.default": "Build",
+  "latex-workshop.latex.build.forceRecipeUsage": true,
   "latex-workshop.latex.recipes": [
     {
       "name": "Build",
       "tools": [
-        "latexmk",
-        "move-pdf"
+        "latexmk"
       ]
     }
   ],
@@ -16,23 +21,12 @@
       "name": "latexmk",
       "command": "latexmk",
       "args": [
-        "-synctex=0",
+        "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
         "-pdf",
-        "-outdir=%OUTDIR%",
+        "-outdir=%WORKSPACE_FOLDER%/build",
         "%DOC%"
-      ]
-    },
-    {
-      "name": "move-pdf",
-      "command": "sh",
-      "args": [
-        "-c",
-        "PDF_DIR=%WORKSPACE_FOLDER%/pdf",
-        "&& install -D %OUTDIR%/%DOCFILE%/%DOCFILE%.pdf ${PDF_DIR}/%DOCFILE%.pdf",
-        "&& chmod --reference=%OUTDIR%/%DOCFILE%.pdf ${PDF_DIR}/%DOCFILE%.pdf",
-        "&& rm %OUTDIR%/%DOCFILE%.pdf"
       ]
     }
   ]
