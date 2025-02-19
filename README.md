@@ -16,13 +16,6 @@ Install the full latex library of packages.
 ### Auto-Compile ###
 The project's `settings.json` is configured to autobuild when a `.tex` file is saved. All source files should be stored in the `src` directory. The generated PDFs and synctex files are store in the `build` directory.
 
-### Compile with Makefile ###
-| Command       | Usage                                        |
-|---------------|----------------------------------------------|
-| `make`        | build all `.tex` files found in `src`        |
-| `make <file>` | build a specific `<file>.tex` found in `src` |
-| `make clean`  | remove all build artifacts and pdf files     |
-
 ### Using SyncTex ###
 SyncTex allows you to quickly jump between the source code and the corresponding location in the PDF. 
 - Forward Search: `Ctrl+Alt+j` jump from `.tex` to PDF
