@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{makecell}
+
+\renewcommand{\theadfont}{\normalsize\bfseries}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\title{System Documentation}
+\author{}
+\date{}
+
+% Colors for Security Categorizations
+\definecolor{navyblue}{RGB}{0,0,128}
+\definecolor{lightgray}{RGB}{211,211,211}
+
+\begin{document}
+
+\maketitle
+
+\section{System Description}
+
+\subsection{Purpose and Capabilities}
+
+\subsection{System Components}
+
+\subsubsection{Software Components}
+
+\subsubsection{Third-Party Components/Services}
+
+\subsection{Stakeholders}
+
+\subsection{Operational Environment}
+
+\section{Data Flow Analysis}
+
+\subsection{Data Identification}
+\subsubsection{Types of Data Processed}
+
+\subsubsection{Data Classification}
+
+\subsection{Data Flow Diagrams (DFDs)}
+\subsubsection{Level 0 (Context Diagram)}
+High-level representation of external interactions with ground control, cloud storage, and third-party services.
+
+\subsubsection{Level 1 DFDs}
+Detailed flow between onboard sensors, processors, storage, and communication systems.
+
+\subsection{Interfaces}
+\subsubsection{Types of Interfaces}
+
+\subsubsection{Protocols \& Security Features}
+
+\section{Security Categorization}
+
+\subsection{Reference Standards}
+\begin{itemize}
+    \item FIPS 199: Security categorization for federal systems.
+    \item NIST SP 800-60: Mapping security categories to information types.
+\end{itemize}
+
+\subsection{Impact Levels (Confidentiality, Integrity, Availability)}
+
+% table goes here
+\begin{center}
+    \rowcolors{2}{lightgray}{white}
+    \begin{tabular}{|p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+    \hline
+    \rowcolor{navyblue!80}
+    \color{white}\textbf{Information Types} & 
+    \color{white}\textbf{Confidentiality} & 
+    \color{white}\textbf{Integrity} & 
+    \color{white}\textbf{Availability} \\ \hline
+    
+    \makecell{Power Supply/\\Battery} & 
+    \makecell[l]{L\\ \scriptsize minimal impact due to 
+    \\\scriptsize information only of the 
+    \\\scriptsize battery itself } & 
+    \makecell[l]{L\\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{H\\ \scriptsize severe impact to the mission 
+    \\\scriptsize can no longer operate
+    \\\scriptsize drone without power} \\ \hline
+    
+    \makecell{Rotors /\\ ECU} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
+
+    \makecell{FILL} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
+
+    \makecell{FILL} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
+
+    \makecell{FILL} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Confidentiality} & 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of Integrity }& 
+    \makecell[l]{L
+    \\ \scriptsize Due to loss of availability,\\
+    \scriptsize severe impact to the mission 
+    \\\scriptsize capability} \\ \hline
+
+    General-Information & L & L & L \\ \hline
+
+    \rowcolor{lightgray}
+    \multicolumn{3}{|l|}{\textbf{System Categorization}} & 
+    \cellcolor{lightgray} \\ \cline{1-3}
+    & Moderate & High & High \\ \hline
+    \end{tabular}
+\end{center}
+    
+\subsection{Overall Categorization}
+Overall Information System Impact: \textcolor{navyblue}{\textbf{High}}
+    
+\subsection{Justification}
+The SCADA system's High impact categorization derives from:
+
+\begin{itemize}
+\item Critical role in power distribution for military operations
+\item Potential for catastrophic consequences including infrastructure failure and loss of life
+\item Remote control capabilities affecting physical systems
+\item Real-time processing requirements for energy management
+\end{itemize}
+
+\section{Risk Management \& Compliance}
+
+Alignment with Risk Management Framework (RMF) per NIST SP 800-37. Categorization informs security control selection (NIST SP 800-53). Ongoing assessment and mitigation per FIPS 200 minimum security controls.
+
+\section{Deliverables}
+
+\begin{itemize}
+    \item \textbf{System Description Document}: A comprehensive report covering all aspects outlined in Section 1.
+    \item \textbf{Data Flow Diagrams}: Level 0 and Level 1 DFDs with annotations.
+    \item \textbf{Security Categorization Whitepaper}: Detailed analysis and justification of the security categorization. See section 4.5 of NIST Special Publication 800-60 Volume I Rev. 1.
+\end{itemize}
+
+\end{document}
