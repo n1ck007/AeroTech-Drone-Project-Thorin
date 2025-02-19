@@ -13,10 +13,8 @@ Install the full latex library of packages.
 - Mac: `brew install texlive`
 - Windows: https://tug.org/texlive/windows.html
 
-### Compile and Preview ###
+### Auto-Compile ###
 The project's `settings.json` is configured to autobuild when a `.tex` file is saved. All source files should be stored in the `src` directory. The generated PDFs and synctex files are store in the `build` directory.
-
-You can use `Ctrl+Alt+j` shortcut bring up the code/preview split panel.
 
 ### Compile with Makefile ###
 | Command       | Usage                                        |
@@ -24,3 +22,8 @@ You can use `Ctrl+Alt+j` shortcut bring up the code/preview split panel.
 | `make`        | build all `.tex` files found in `src`        |
 | `make <file>` | build a specific `<file>.tex` found in `src` |
 | `make clean`  | remove all build artifacts and pdf files     |
+
+### Using SyncTex ###
+SyncTex allows you to quickly jump between the source code and the corresponding location in the PDF. 
+- Forward Search: `Ctrl+Alt+j` jump from `.tex` to PDF
+- Inverse search: `Ctrl-Click` jump from PDF to `.tex`
