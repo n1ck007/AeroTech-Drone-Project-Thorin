@@ -8,8 +8,7 @@ all: $(DOCS)
 
 $(DOCS):
 	latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=$(BUILD_DIR) $(SRC_DIR)/$@.tex
-	# rm ${BUILD_DIR}/*.{aux,fdb_latexmk,fls,log}
-
+	rm ${BUILD_DIR}/*.{aux,fdb_latexmk,fls,log}
 
 .PHONY: clean
 clean:
