@@ -6,6 +6,9 @@ UTA CSE-4380, Information Security 1, AeroTech-Drone-Project
 - Data Flow Analysis: Eli & Obadah
 - Security Categorization: Nick & Betim
 
+### Definition of Done ###
+Each team’s task should produce a PR with the fully complete, ready to compile and ship, latex code. If the PR review produces any issues, they should be fixed. Once the PR passes review that team’s task is officially completed.
+
 ## Project Configuration ##
 ### Install LaTeX ###
 Install the full latex library of packages.
