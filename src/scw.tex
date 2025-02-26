@@ -1,8 +1,57 @@
 \documentclass{article}
 
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\setlength\parindent{0pt}
+
+\renewcommand{\theadfont}{\normalsize\bfseries}
+
+% report title
+\title{Assignment 1 - System Categroization \\ \textit{Security Categorization}\\ CSE 4380}
+
+\author{Group Thorin}
+
+% date of assignment submission
+\date{February 28th, 2025}
+
+% Colors for Security Categorizations
+\definecolor{navyblue}{RGB}{0,0,128}
+\definecolor{lightgray}{RGB}{211,211,211}
+
 \begin{document}
 
+\maketitle
+\begin{center}
+\begin{tabular}{l r}
+
+% team members
+Members: 	& Obadah Al-Smadi\\
+			& Betim Hodza\\
+			& Elliot Mai\\
+			& Benjamin Niccum\\
+        	& Nicholas Pratt\\
+Instructor: & Trevor Bakker\end{tabular}
+\end{center}
+
+\newpage
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+
+%%% List of figures and tables (optional)
+\listoffigures
+\listoftables
+\newpage
+
 \section{Security Categorization}
+
 \subsection{Reference Standards}
 \begin{itemize}
     \item FIPS 199: Security categorization for federal systems.
@@ -10,9 +59,15 @@
 \end{itemize}
 
 \subsection{Impact Levels (Confidentiality, Integrity, Availability)}
-\subsection{Overall Categorization}
-\subsection{Justification}
-\section{Risk Management \& Compliance}
-Alignment with Risk Management Framework (RMF) per NIST SP 800-37. Categorization informs security control selection (NIST SP 800-53). Ongoing assessment and mitigation per FIPS 200 minimum security controls.
+\input{components/impact_levels.tex}
 
+\subsection{Overall Categorization}
+
+\subsection{Justification}
+
+\newpage
+
+\section{Risk Management \& Compliance}
+
+Alignment with Risk Management Framework (RMF) per NIST SP 800-37. Categorization informs security control selection (NIST SP 800-53). Ongoing assessment and mitigation per FIPS 200 minimum security controls.
 \end{document}
