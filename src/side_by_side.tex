@@ -1,0 +1,204 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{soul} % add \st{} for strikthough
+\usepackage{siunitx} % add \si{} for SI units
+\geometry{a4paper, margin=1in}
+
+\title{Old Updates}
+\author{Nick}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\par Compares features included in 'AeroTech X9 Drone.pdf' with proposed features in 'AeroTech Pitch.pdf'.
+
+\section{Design and Architecture}
+\subsection{Airframe and Physical Characteristics}
+\begin{itemize}
+    \item \textbf{Materials:} \st{Carbon fiber composite for a lightweight yet robust structure.} Upgrade to military-grade materials for increased resilience against harsh conditions.
+    \item \textbf{Dimensions:} Wingspan: 2.5 meters, Length: 1.8 meters, Height: 0.6 meters
+    \item \textbf{Weight:} Empty Weight: 12\si{kg}, Max Takeoff Weight: 20\si{kg}.
+    \item \textbf{Payload Capacity:} Up to \st{8 kg} 10 kg, supporting modular payloads.
+    \item \textbf{\underline{Intelligence Gathering:}} Equip with signals intelligence (SIGINT) and electronic warfare (EW) payloads.
+    \item \textbf{\underline{Communications Relay:}} Provide battleﬁeld communication support through relay payloads.
+    \item \textbf{\underline{Non-Lethal Countermeasures:}} Integrate systems for electronic countermeasures and area denial.
+    \item \textbf{\underline{Anti-Armor and Anti-Personnel Munitions:}} Integrate systems for delivery of ordnance up to 10kg.
+    \item \textbf{Aerodynamic Design:} Optimized for stability and efficiency in various flight conditions.
+    \item \textbf{\underline{Environmental Sealing:}} Enhance protection against dust, moisture, and electromagnetic interference.
+    \item \textbf{\underline{Extended Endurance:}} Incorporate fuel cells or hybrid power systems for longer mission durations.
+    \item \textbf{\underline{Secure Storage:}} Secure storage of sensitive data recorded during operations.
+\end{itemize}
+
+\subsection{Propulsion System}
+\begin{itemize}
+    \item \textbf{Engine Type:} Electric brushless motors with high-efficiency propellers.
+    \item \textbf{Power Source:} Advanced lithium-polymer batteries with energy densities of 300 Wh/kg.
+    \item \textbf{Redundancy:} Dual-motor configuration for enhanced reliability and safety.
+\end{itemize}
+
+\subsection{Navigation and Control Systems}
+\begin{itemize}
+    \item \textbf{Autonomous Navigation:} Integrated AI algorithms for real-time path planning and obstacle avoidance.
+    \item \textbf{GPS/GNSS Systems:} Multi-constellation support (GPS, GLONASS, Galileo) for precise positioning.
+    \item \textbf{Inertial Measurement Unit (IMU):} High-precision sensors for attitude and heading reference.
+    \item \textbf{\underline{Navigation Systems}} Enhanced GNSS with anti-spooﬁng, Inertial Navigation System (INS)
+    \item \textbf{Flight Control Software:} Proprietary AeroTech OS with modular architecture for updates and customization.
+\end{itemize}
+
+\section{Key Features}
+
+\subsection{High-Resolution Imaging and Sensing}
+\begin{itemize}
+    \item \textbf{Camera Systems:}
+    \begin{itemize}
+        \item 4K Ultra-HD optical camera with 30x optical zoom.
+        \item \textbf{\underline{Long-Range Zoom:}} Incorporate powerful zoom lenses to identify targets at extended distances.
+        \item Thermal imaging sensor for night operations and heat detection.
+        \item \textbf{\underline{Night Vision and Thermal Imaging:}} Equip the drone with advanced sensors for 24/7 operational capability.
+        \item LIDAR sensor for topographical mapping and obstacle detection.
+        \item \textbf{\underline{High-Resolution Imaging:}} Upgrade to military-grade electro-optical/infrared (EO/IR) \linebreak sensors for enhanced reconnaissance.
+    \end{itemize}
+    \item \textbf{Data Processing:}
+    \begin{itemize}
+        \item Onboard image processing for real-time analytics.
+        \item Supports machine learning algorithms for object recognition and tracking.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Communication}
+\begin{itemize}
+    \item \textbf{Communication Channels:}
+    \begin{itemize}
+        \item Dual-band radio frequency (RF) communication.
+        \item 4G/5G cellular connectivity for extended range operations.
+        \item Satellite communication module (optional) for beyond-line-of-sight missions.
+    \end{itemize}
+    \item \textbf{\underline{Communication Links:}} Encrypted RF, SATCOM, LTE/5G.
+    \item \textbf{\underline{Beyond-Line-of-Sight (BLOS) Operations:}} Utilize satellite communication modules for extended range missions.
+    \item \textbf{Anti-Jamming:} Frequency hopping spread spectrum (FHSS) technology.
+    \item \textbf{\underline{Anti-Jamming Technology:}} Integrate frequency hopping and anti-jamming measures to ensure uninterrupted operation.
+    \item \textbf{\underline{Data Links:}} Implements robust encryption protocols to protect communications.
+\end{itemize}
+
+\subsection{Modular Payload System}
+\begin{itemize}
+    \item \textbf{Interchangeable Payloads:}
+    \begin{itemize}
+        \item Delivery containers for logistics and supply chain applications.
+        \item Environmental sensors for air quality, radiation, and weather monitoring.
+        \item Specialized equipment for agricultural spraying, search and rescue, and surveillance.
+    \end{itemize}
+    \item \textbf{Quick-Change Mechanism:}
+    \begin{itemize}
+        \item Tool-less attachment system for rapid deployment.
+        \item Automatic payload recognition and configuration.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Extended Range and Endurance}
+\begin{itemize}
+    \item \textbf{Flight Time:} Up to 4 hours under standard operating conditions.
+    \item \textbf{\underline{Maximum Flight Time:}} Up to 6 hours with hybrid power systems.
+    \item \textbf{Range:} Operational range of 200 kilometers, extendable with optional power modules.
+    \item \textbf{\underline{Operational Range:}} 300 kilometers (extendable with BLOS ca-pabilities)
+    \item \textbf{Energy Efficiency:} Regenerative braking and energy management systems to optimize power consumption.
+\end{itemize}
+
+\subsection{Real-Time Data Processing}
+\begin{itemize}
+    \item \textbf{Onboard Computing:}
+    \begin{itemize}
+        \item ARMv7 processor capable of handling complex computations.
+        \item 64 GB of DDR5 Volatile Storage
+        \item 2 TB of NVMe for imagery and mission data retention.
+        \item NVIDIA RTX 5000 Embedded GPU
+    \end{itemize}
+    \item \textbf{Artiﬁcial Intelligence:}
+    \begin{itemize}
+        \item Machine learning algorithms for anomaly detection and predictive maintenance.
+        \item AI-driven decision-making for dynamic mission adjustments.
+        \item \textbf{\underline{Autonomous Navigation:}} Reﬁne AI algorithms for obstacle avoidance in contested environments.
+        \item \textbf{\underline{Target Recognition:}} Employ machine learning for automatic identiﬁcation and tracking of objects of interest.
+        \item \textbf{\underline{Swarm Capabilities:}} Enable coordination between multiple drones for complex mission execution.
+    \end{itemize}
+\end{itemize}
+
+\section{Operational Capabilities}
+\subsection{Versatile Applications}
+The AeroTech X9 is designed for a multitude of applications:
+\begin{itemize}
+    \item \textbf{Infrastructure Inspection:} Bridges, pipelines, power lines, and wind turbines.
+    \item \textbf{Agricultural Monitoring:} Crop health analysis, irrigation management, and yield estimation.
+    \item \textbf{Disaster Response:} Rapid assessment of affected areas, search and rescue support.
+    \item \textbf{Logistics and Delivery:} Transporting medical supplies, packages, and critical equipment.
+\end{itemize}
+
+\subsection{Environmental Adaptability}
+\begin{itemize}
+    \item \textbf{Altitude Range:} Operational ceiling of 5,000 meters above sea level.
+    \item \textbf{\underline{Maximum Altitude}} 6,000 meters above sea level.
+    \item \textbf{Wind Resistance:} Stable flight in winds up to 35 km/h.
+    \item \textbf{\underline{Environmental Tolerance:}} Operational in temperatures from $-30^\circ$C to $55^\circ$C, wind resistance up to 45 km/h.
+\end{itemize}
+
+\section{Safety and Compliance}
+\subsection{Safety Features}
+\begin{itemize}
+    \item \textbf{Redundant Systems:} Backup sensors and control systems to prevent failures.
+    \item \textbf{Obstacle Avoidance:} 360-degree sensing and avoidance capabilities.
+    \item \textbf{Emergency Protocols:}
+    \begin{itemize}
+        \item Automatic return-to-home (RTH) function upon signal loss or low battery.
+        \item Geo-fencing to prevent entry into restricted areas.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Regulatory Compliance}
+\begin{itemize}
+    \item \textbf{Certiﬁcation:} Meets FAA, EASA, and other international aviation authority standards.
+    \item \textbf{Emission Standards:} Zero-emission electric propulsion aligns with environmental guidelines.
+\end{itemize}
+
+\section{User Interface and Control}
+\subsection{Ground Control Station (GCS)}
+\begin{itemize}
+    \item User-Friendly Interface: Intuitive controls with customizable layouts.
+    \item Mission Planning Software: Advanced tools for route planning, waypoint management, and mission simulation.
+    \item Real-Time Monitoring: Live video feed, telemetry data, and system status updates.
+\end{itemize}
+
+\subsection{Remote and Autonomous Operation}
+\begin{itemize}
+    \item Remote Piloting: Manual control options for precise maneuvering.
+    \item Autonomous Missions: Pre-programmed missions with the ability to adapt to changing conditions.
+    \item Swarm Capability: Coordination with multiple drones for complex operations.
+\end{itemize}
+
+\section{Maintenance and Support}
+\subsection{Ease of Maintenance}
+\begin{itemize}
+    \item Modular Design: Simpliﬁes repairs and component replacements.
+    \item Diagnostic Tools: Onboard diagnostics and remote health monitoring.
+    \item Maintenance Alerts: Predictive alerts for scheduled maintenance activities.
+\end{itemize}
+
+\subsection{Training and Support Services}
+\begin{itemize}
+    \item Pilot Training Programs: Comprehensive courses for operators and technicians.
+    \item Customer Support: 24/7 technical assistance and ﬁeld support teams.
+    \item Documentation: Detailed user manuals, maintenance guides, and online resources.
+\end{itemize}
+
+\section{Compliance and Certifications}
+\begin{itemize}
+    \item Regulatory Compliance: Designed to meet defense regulatory standards and airworthiness requirements.
+    \item Cybersecurity Standards: Adherence to NIST and ISO cybersecurity frameworks to safeguard against cyber threats.
+    \item Export Controls: Compliance with International Traﬃc in Arms Regulations (ITAR) and other export control laws.
+\end{itemize}
+
+\end{document}
