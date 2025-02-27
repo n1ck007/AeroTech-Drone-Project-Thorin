@@ -7,8 +7,11 @@
 \usepackage{colortbl}
 \usepackage{array}
 \usepackage{makecell}
+\usepackage{soul} % add \st{} for strikthrough
 \usepackage[letterpaper, portrait, margin=1in]{geometry}
-\setlength\parindent{0pt}
+\usepackage{indentfirst}
+% \setlength\parindent{0pt}
+
 
 \renewcommand{\theadfont}{\normalsize\bfseries}
 
@@ -46,9 +49,35 @@ Instructor: & Trevor Bakker\end{tabular}
 \newpage
 
 %%% List of figures and tables (optional)
-\listoffigures
-\listoftables
-\newpage
+% \listoffigures
+% \listoftables
+% \newpage
+
+\section{Executive Summary}
+\par This whitepaper evaluates the security classification of the 
+AeroTech X9 drone system using established federal guidelines. 
+Originally designed for commercial applications, the X9 is now 
+being upgraded to meet military-grade specifications for defense 
+use. This transition introduces heightened security requirements 
+due to its enhanced surveillance, intelligence-gathering, and 
+operational capabilities. By analyzing the confidentiality, 
+integrity, and availability of its data, this document assigns 
+a security classification to guide risk management and compliance 
+measures.
+
+\section{Introduction}
+\par The upgrade of the AeroTech X9 drone from commercial to military 
+use introduces new and enhanced information systems that require proper 
+categorization and vulnerability analysis. Furthermore, existing systems 
+from the commercial iteration must be reevaluated, as they could interact 
+with new features in unexpected ways, potentially creating security risks. 
+
+\section{Purpose}
+\par The purpose of this whitepaper is to evaluate and assign a security 
+classification to the AeroTech X9 drone system based on its transition 
+from commercial to military-grade use. This classification will guide 
+risk management strategies and compliance with relevant security 
+frameworks, ensuring secure operations in defense environments.
 
 \section{Security Categorization}
 
@@ -59,7 +88,8 @@ Instructor: & Trevor Bakker\end{tabular}
 \end{itemize}
 
 \subsection{Impact Levels (Confidentiality, Integrity, Availability)}
-\input{components/impact_levels.tex}
+\par (table goes here)
+% \input{components/impact_levels.tex}
 
 \subsection{Overall Categorization}
 
