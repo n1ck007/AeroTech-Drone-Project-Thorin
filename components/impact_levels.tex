@@ -56,7 +56,7 @@
     
     % Flight Control Board
     \makecell{Flight Control Board} & 
-    \makecell[l]{L\\ \scriptsize Disclosure of information \\ \scriptsize processed on the board could \\ \scriptsize lead to minor operational \\ \scriptsize disruptions. This could \\ \scriptsize compromise the security of \\ \scriptsize the drones system allowing \\ \scriptsize for potential exploits to be \\ \scriptsize done. (NIST 800-60 3.2)} & 
+    \makecell[l]{L\\ \scriptsize Disclosure of information \\ \scriptsize processed on the board could \\ \scriptsize lead to minor operational \\ \scriptsize disruptions. This could \\ \scriptsize compromise the security of \\ \scriptsize the drones system allowing \\ \scriptsize for potential exploits to be \\ \scriptsize done. (\cite{nistsp80060v1r1} 3.2)} & 
     \makecell[l]{H\\ \scriptsize Severe impact will occur if \\ \scriptsize the integrity of the FCB is \\ \scriptsize comprimised, as it's used for \\ \scriptsize not only autopilot but helps \\ \scriptsize assit in manual flight for an \\ \scriptsize operator. \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.2 Table 7)} & 
     \makecell[l]{H\\ \scriptsize Severe impact will occur if \\ \scriptsize the Availability of the FCB \\ \scriptsize is lost, similarly to Integrity \\ \scriptsize it will loose autopilot but \\ \scriptsize normal controls for flying \\ \scriptsize  the drone manually. \\ \scriptsize  (\cite{nistsp80060v1r1} 4.4.2.4)} \\ \hline
 
@@ -68,38 +68,38 @@
     
     % Thermal Camera
     \makecell{Thermal Camera} & 
-    \makecell[l]{L\\ \scriptsize Waypoint exposure risks\\ \scriptsize (NIST 800-60 3.2)} & 
-    \makecell[l]{H\\ \scriptsize Integrity failure crashes drone\\ \scriptsize (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{H\\ \scriptsize Autopilot loss critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
+    \makecell[l]{L\\ \scriptsize The images themselves can \\\scriptsize contain confidential  \\\scriptsize information, but the image clarity of  \\\scriptsize  themeral cameras won't lead to major mission  \\\scriptsize  distruptions. But in terms of comprimises  \\\scriptsize to operations, this will be minimal.\\ \scriptsize (\cite{nistsp80060v1r1} 3.2)} & 
+    \makecell[l]{H\\ \scriptsize Minimal impact of the system will occur for tampering image data for the thermal camera. It can be an inconvience but as long as we have redundant systems it won't disrupt operations much.\\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.2)} & 
+    \makecell[l]{H\\ \scriptsize Minimal impact could occur for the loss of availability of the thermal camera, it will impact mission capability as we could get crucial information from thermal cameras, but it won't be huge disruptions. \\ \scriptsize (\cite{nistsp80060v1r1} 4.4.2.4)} \\ \hline
     
     % CPU
     \makecell{CPU} & 
-    \makecell[l]{H\\ \scriptsize Key extraction risks\\ \scriptsize (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{H\\ \scriptsize Overload causes crashes\\ \scriptsize (NIST 800-60 4.4.2.4)} & 
-    \makecell[l]{H\\ \scriptsize System failure critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
+    \makecell[l]{H\\ \scriptsize With unauthorized access an attacker could extract cryptographic keys from the CPU allowing them to decrypt messages on all other parts of the system or perform a memory dump to extract flight plans and other mission critical data.\\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{H\\ \scriptsize With unauthorized access an attacker could cause catastrophic damage to the system. They could overload the CPU and causing delays in the processing of sesor data or cause a kernel panic, cutting off connection to ground control, and causing the drone to crash. NIST-800-60 4.4.2.4. and 4.2.2.2.\\ \scriptsize (\cite{nistsp80060v1r1} 4.4.2.4)} & 
+    \makecell[l]{H\\ \scriptsize if the CPU becomes unavailble, severe consequences in mission capabilities will occur, causing our drone to be inopperable. \\ \scriptsize (\cite{nistsp80060v1r1} 4.4.2.4 and 4.2.2.3)} \\ \hline
     % RAM
     \makecell{RAM} & 
-    \makecell[l]{H\\ \scriptsize Key extraction risks\\ \scriptsize (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{H\\ \scriptsize Overload causes crashes\\ \scriptsize (NIST 800-60 4.4.2.4)} & 
-    \makecell[l]{H\\ \scriptsize System failure critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
+    \makecell[l]{H\\ \scriptsize Volatile memory could disclose severe mission critical data, although the difficulty to exploting this is harder then some of the others its a possibility.\\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{H\\ \scriptsize  Severe impact could lead to interruptions to the drones operation, but this is also unlikly to occur. Changing the RAM data would require an immense amount of engineering but could mean that the system is already comprimised from some other reason.\\ \scriptsize (\cite{nistsp80060v1r1} 4.4.2.2)} & 
+    \makecell[l]{H\\ \scriptsize If volatile memory is unavailbile critical mission capabilities will not be available and will lead to catastrophic damage.\\ \scriptsize (\cite{nistsp80060v1r1} 4.4.2.4 Critical infastructure, 4.2.2.3.)} \\ \hline
     
     % SSD
     \makecell{SSD} & 
-    \makecell[l]{H\\ \scriptsize Key extraction risks\\ \scriptsize (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{H\\ \scriptsize Overload causes crashes\\ \scriptsize (NIST 800-60 4.4.2.4)} & 
-    \makecell[l]{H\\ \scriptsize System failure critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
+    \makecell[l]{H\\ \scriptsize With unauthorized access, an attacker could steal data from the SSD, leading to the exposure of classified mission system information and mission-critical data.\\\scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{H\\ \scriptsize With unauthorized access, an attacker could modify any data stored on the SSD such flight plans or insert new data such as malware. With unauthorized access an attacker could overload the CPU and causing delays in the processing of sesor data or cause a kernel panic, cutting off connection to ground control, and causing the drone to crash.\\ \scriptsize (\cite{nistsp80060v1r1} 4.4.2.4)} & 
+    \makecell[l]{H\\ \scriptsize  With unauthorized access, an attacker could corrupt or wipe the data stored on the SSD, rendering it inaccessible.\\\scriptsize (\cite{nistsp80060v1r1} 4.4.2.3)} \\\hline
     
     % AeroTech Flight Software
     \makecell{AeroTech Flight\\ Software} & 
-    \makecell[l]{M/H\\ \scriptsize Proprietary code theft risks\\ \scriptsize (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{H\\ \scriptsize Compromise fatal to operations\\ \scriptsize (NIST 800-60 4.4.2.4)} & 
-    \makecell[l]{H\\ \scriptsize Mission-critical device\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
+    \makecell[l]{M/H\\ \scriptsize  The flight software include proprietary and sensitive information within, this can lead to serious breaches in confidentiality if our adversaries copy or use our techniques.\\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{H\\ \scriptsize \\ Severe damage and loss of human life could occur if the integrity is comprimised, as the flight controller is important to keep the drone operating properly, if it's manipulated in some sort of way it could severly disrupt operations.\scriptsize (\cite{nistsp80060v1r1} 4.4.2.2)} & 
+    \makecell[l]{H\\ \scriptsize Loss of availability will mean that the drone can no longer operate properly. Severe damage could happen if availability is lost during flight with the drone, as it's a mission critical device. \\\scriptsize (\cite{nistsp80060v1r1} 4.4.2.4)} \\ \hline
     
     % Encrypted Data
     \makecell{Encrypted Data} & 
-    \makecell[l]{M\\ \scriptsize Key exposure risks missions\\ \scriptsize (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{M\\ \scriptsize Tampering disrupts operations\\ \scriptsize (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{L\\ \scriptsize Loss affects storage only\\ \scriptsize (NIST 800-60 4.2.2.3)} \\ \hline
+    \makecell[l]{M\\ \scriptsize if the encryption keys for any of the data get exposed then serious mission data gets exposed and can cause damage.\\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{M\\ \scriptsize Tampering of encrypted data can lead to significant distruptions to operations, as it could be mission critical to keep it secure.\\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.2)} & 
+    \makecell[l]{L\\ \scriptsize Loss of availability of this data doesn't affect mission critical resources or affects the drone much.\\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.3)} \\ \hline
         
     
 \end{tabular}
