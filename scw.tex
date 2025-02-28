@@ -11,6 +11,8 @@
 \usepackage[letterpaper, portrait, margin=1in]{geometry}
 \usepackage{indentfirst}
 % \setlength\parindent{0pt}
+\usepackage{cite}
+
 
 
 \renewcommand{\theadfont}{\normalsize\bfseries}
@@ -81,20 +83,21 @@ frameworks, ensuring secure operations in defense environments.
 
 \section{Security Categorization}
 
-\subsection{Reference Standards}
-\begin{itemize}
-    \item FIPS 199: Security categorization for federal systems.
-    \item NIST SP 800-60: Mapping security categories to information types.
-\end{itemize}
+
 
 \subsection{Impact Levels (Confidentiality, Integrity, Availability)}
 \input{components/impact_levels.tex}
 
-\subsection{Overall Categorization}
 
-\subsection{Justification}
 
 \newpage
+
+\subsection{Reference Standards}
+\begin{itemize}
+    \item FIPS 199: Standards for Security Categorization of Federal Information and Information Systems
+    \item NIST SP 800-60: Guide for Mapping Types of Information and Information Systems to Security Categories
+\end{itemize}
+
 
 \section{Risk Management \& Compliance}
 \par Alignment with Risk Management Framework (RMF) per NIST SP 800-37. 
@@ -102,6 +105,12 @@ Categorization informs security control selection (NIST SP 800-53).
 Ongoing assessment and mitigation per FIPS 200 minimum security controls.
 
 \section{Conclusion}
+\par Example citation, remove later. \cite{fips199}
 \par (add conclusion)
+
+
+% References
+\bibliographystyle{plain}
+\bibliography{references/refs}{}
 
 \end{document}
