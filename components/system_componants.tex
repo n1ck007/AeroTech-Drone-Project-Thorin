@@ -2,105 +2,110 @@
 \begin{itemize}
     \item Lightweight, durable materials (developed through AeroTech's materials science research)
     \item Modular design for adaptability and customization
+    \item Carbon fiber composite structure with military-grade materials for increased resilience
+    \item Enhanced environmental sealing against dust, moisture, and electromagnetic interference
 \end{itemize}
 
 \subsubsection{Propulsion System}
-Multiply cost by number of propellors required.
 \begin{itemize}
-    \item Electric Motors (Brushless DC): \\ \$310 \\
-    \href{https://store.tmotor.com/goods.php?id=1149}{https://store.tmotor.com/goods.php?id=1149} \\
-    U8IILite Efficiency Type Multirotor UAV Motor KV100 \\
-    Specification: Stable operation, 1000 hr life, Competitive performance, 256g, 9.1kg thrust, 36 power ratio
-
-    \item Propellers: \\ \$83
-\\ \href{https://store.tmotor.com/goods.php?id=964}{https://store.tmotor.com/goods.php?id=964} \\
-NS18*6 Prop-2PCS/PAIR
-\\ Specification: Very large, 18” super lightweight and durable, 17g, lifts 5kg per propellor
-
-    \item Electronic Speed Controllers (ESCs):\\ \$120 \\
-\href{https://store.tmotor.com/goods.php?id=830}{https://store.tmotor.com/goods.php?id=830} \\
-	FLAME 80A 12S V2.0 Multi-Rotor UAVs ESC \\
-Specification: Built for tough conditions, Built in protection features, High performance processor, 109g, 
-
+    \item Electric Motors (Brushless DC): U8IILite Efficiency Type Multirotor UAV Motor KV100
+    \begin{itemize}
+        \item Specification: Stable operation, 1000 hr life, Competitive performance, 256g, 9.1kg thrust, 36 power ratio, Industrial grade, Waterproof, dustproof, low noise, large bearings
+    \end{itemize}
+    \item Propellers: NS18*6 Prop-2PCS/PAIR
+    \begin{itemize}
+        \item Specification: Very large, 18" super lightweight and durable, 17g, lifts 5kg per propeller
+    \end{itemize}
+    \item Electronic Speed Controllers (ESCs): FLAME 80A 12S V2.0 Multi-Rotor UAVs ESC
+    \begin{itemize}
+        \item Specification: Built for tough conditions, Built-in protection features, High-performance processor, 109g
+    \end{itemize}
 \end{itemize}
 
 \subsubsection{Navigation \& Control Hardware}
 \begin{itemize}
-    \item GPS Module: \\
-    \$(Pending response)
-    \\Collins AeroSpace Navstrike (SPS GPS Receiver) \\
-https://www.baesystems.com/en/product/navstrike--gps-receiver \\ Specification: Fifth-generation SAASM-based design,
-All-in-view tracking and navigation,
-No need for active antenna electronics,
-Field-reprogrammable software,
-Designed for high-g vibration and shock,
-High-speed serial interface,
-Field clock recalibration for extended storage
+    \item GPS Module: Collins AeroSpace Navstrike (SPS GPS Receiver)
+    \begin{itemize}
+        \item Specification: Fifth-generation SAASM-based design, All-in-view tracking and navigation, No need for active antenna electronics, Field-reprogrammable software, Designed for high-g vibration and shock, High-speed serial interface, Field clock recalibration for extended storage
+    \end{itemize}
+    \item Inertial Measurement Unit (IMU): Honeywell HG1930
+    \begin{itemize}
+        \item Specification: Ideal for unmanned vehicles, Easy integration with SPAN receivers, Ideal for size-constrained applications, Small size and light weight, 10-30 VDC power input, 100 Hz data rate
+    \end{itemize}
+    \item Flight Controller Board: UAV Navigation VECTOR-600
+    \begin{itemize}
+        \item Specification: Automatic actions on waypoints: suitable for cargo drop or camera shots, Transponder ADS-B IN for UTM (Unmanned Traffic Management), Compact Unit, Easily Configurable, Multi-UAV Operations, Integrated ADS, Dual High-end CPU, Tactical grade ADAHRS, Flare and parachute activation for target drones
+    \end{itemize}
+    \item Transmitter/Receiver (for remote control): Crysalis™ Tactical GCS
+    \begin{itemize}
+        \item Specification: Back-Packable, 20 km range, 10 min setup, 3.9 kg Android OS, Swappable battery, Compatible Antennas: pDDL, Standard Range Antenna, ERA
+    \end{itemize}
+    \item MicroController Unit: STM32
+    \begin{itemize}
+        \item Specification: Very high performance, real-time capabilities, digital signal processing, low-power / low-voltage operation, and connectivity, while maintaining full integration and ease of development.
+    \end{itemize}
+\end{itemize}
 
-    \item Inertial Measurement Unit (IMU): 
-    \\ \$(Price Pending)
-    \\Honeywell HG1930 \\https://novatel.com/products/gnss-inertial-navigation-systems/imus/hg1930 
-    \\Specification: Ideal for unmanned vehicles,
-Easy integration with SPAN receivers,
-Ideal for size-constrained applications,
-Small size and light weight,
-10-30 VDC power input,
-100 Hz data rate
-
-    \item Flight Controller Board: \\ \$(Price Pending)
-    \\UAV Navigation VECTOR-600 \\
-\href{https://www.uavnavigation.com/products/autopilots/vector-600}{https://www.uavnavigation.com/products/autopilots/vector-600}
-\\Specification: Automatic actions on waypoints: suitable for cargo drop or camera shots, Transponder ADS-B IN for UTM (Unmanned Traffic Management), Compact Unit., Easily Configurable, Multi-UAV Operations, Integrated ADS, Dual High-end CPU, Tactical grade ADAHRS, Flare and parachute activation for target drones
-
-    \item Transmitter/Receiver (for remote control): \\ \$(Price Pending)
-    \\ Crysalis™ Tactical GCS
-    \\ \href{https://www.avinc.com/uas/crysalis/tactical-gcs}{https://www.avinc.com/uas/crysalis/tactical-gcs}
-\\Specification: Back-Packable, 20 km range, 10 min setup, 3.9 kg Android OS, Swappable battery, Compatible Antennas: pDDL, Standard Range Antenna, ERA
-
+\subsubsection{Onboard Computing}
+\begin{itemize}
+    \item GPU \& CPU: NVIDIA Jetson Orin Nano
+    \begin{itemize}
+        \item Specifications: CUDA-enabled for parallel processing, Supports machine vision with time-synchronized IMU and cameras, Enhances processing speeds for Dense Matching and 2D Products steps
+    \end{itemize}
+    \item In-line Memory Encryptor: NXP SE050
+    \begin{itemize}
+        \item Specifications: Hardware secure element, CC EAL 6+ certified, Supports AES and 3DES encryption/decryption, RSA and ECC asymmetric algorithms, Secure key storage, I2C interface, Temperature range -40°C to 105°C
+    \end{itemize}
+    \item NVMe: Seagate Firecuda 530 NVMe SSD
+    \begin{itemize}
+        \item Specifications: Speed Reigns. Pure performance, absolute power, the most advanced components, and unrivaled endurance. At up to 7,300MB/s you can harness the full power of PCIe Gen4 speeds. Built for sustained, pro-level gaming and accelerated content creation with transfer speeds up to 2× faster than PCIe Gen3 NVMe SSDs and up to 12× faster than SATA SSDs. Built with a Seagate-validated E18 controller and the latest 3D TLC SSD NAND to provide the most advanced speed and durability. Up to 5100TB TBW means you can write and delete 70\% of the drive capacity, every day, for five years. Up to 4TB capacities and transfer speeds of up to 7300MB/s. Rescue Services. Three years of Rescue Data Recovery Services, offering an industry-leading 95\% success rate against unexpected data loss.
+    \end{itemize}
 \end{itemize}
 
 \subsubsection{Power System}
 \begin{itemize}
-    \item High-Capacity Battery (LiPo or similar): \\ \$(Price Pending) \\
-    Back-up Batteries for MALE UAS \\
-\href{https://www.epsilor.com/product/batteries-for-unmanned-aerial-systems-uas/batteries-for-tactical-and-male-uas/  }{https://www.epsilor.com/product/batteries-for-unmanned-aerial-systems-uas/batteries-for-tactical-and-male-uas/  }
-\\    Specification: Flexible design and form factors addressing complex geometries, High energy density:\>250 Wh/kg, High power density:\>3,000 W/kg, Long life cycle – supporting hundreds of missions with a single battery, Cold and hot weather operability
-    \item Power Distribution Board (PDB):\\
-    \$(Price Pending)
-    \\ \href{https://vat.aero/1800w-power-distribution-unit/}{https://vat.aero/1800w-power-distribution-unit/}
-    \\Specification: 24 to 55 VDC, Umbilical input	28 to 60 VDC, six outputs(three unique)
-Altitude rating	10,000m, Operating temperature range -40 to +55°C, Connectors	MIL-D38999 and LEMO M-Series, Communications protocols RS232 (57600 8N1), CAN (1Mb/S)
-    \item Voltage Regulators:
-    \\ \#(Price Pending)
-    \\\href{https://www.ti.com/product/LM138QML}{https://www.ti.com/product/LM138QML}
-    \\Texas Instruments LM138QML
-    \\Specification: Manufactured and Tested per Texas Instruments
-Military Grade Flow, Specified 7-A Peak Output Current, Specified 5-A Output Current, Wide Temperature Range –55°C to 150°C, Adjustable Output Down to 1.2 V, Specified Thermal Regulation, Current Limit Constant With Temperature, Output is Short-Circuit Protected
-
+    \item High-Capacity Battery (LiPo or similar): Back-up Batteries for MALE UAS
+    \begin{itemize}
+        \item Specification: Flexible design and form factors addressing complex geometries, High energy density: \>250 Wh/kg, High power density: \>3,000 W/kg, Long life cycle – supporting hundreds of missions with a single battery, Cold and hot weather operability
+    \end{itemize}
+    \item Power supply: TATTU G-tech
+    \begin{itemize}
+        \item Specifications: Capacity: 41000mAh, Voltage: 23.7V/6S, Max Constant Current: 60A, Max Peak Current: 100A, Net Weight(±20g): 3790g, Size: 230x104x70mm, Discharge Connector Type: XT90-S, Balancer Connector Type: G-Tech-7P, Discharge Wire: 8\# 150mm, Charge Wire: 22\# 75mm. Technical Features: High Energy Density: 280Wh/kg, High Voltage: 4.45V/cell, Safety Performance: Voltage range of 4.45V to 3.0V per cell when the State of Charge (SOC) is from 100\% to 0\%. Cycle Life of Pack: 300+ cycles, with 80\% of the initial capacity retained after those cycles.
+    \end{itemize}
+    \item Voltage Regulators: Texas Instruments LM138QML
+    \begin{itemize}
+        \item Specification: Manufactured and Tested per Texas Instruments Military Grade Flow, Specified 7-A Peak Output Current, Specified 5-A Output Current, Wide Temperature Range –55°C to 150°C, Adjustable Output Down to 1.2 V, Specified Thermal Regulation, Current Limit Constant With Temperature, Output is Short-Circuit Protected
+    \end{itemize}
 \end{itemize}
 
 \subsubsection{Payload Interfaces}
 \begin{itemize}
-    \item Standardized mounting points: \\
-    12mm Rail Payload Mount Kit (Alta X)\\
-\href{https://store.freeflysystems.com/products/12mm-rail-payload-mount-alta-x}{https://store.freeflysystems.com/products/12mm-rail-payload-mount-alta-x}\\
-\$350\\
-Specifications:  Compatible with payload mounting brackets using 12mm rails
-, Machined aluminum and carbon fiber for lightweight, rigid payload mounting, Weight in use: 6.6 oz / 186 g, Quick-release levers for easy adjustment, Includes fasteners and driver for installation
-
-    \item Power and data connections for various sensors/payloads: \\
-    Mouser Electronics provides most connectors that might be necessary, and these will be included as needed.
-    \item Cameras: \\
-    VEGA Ultra Long-Range Multi-Sensor PTZ Camera \\ 
-\href{https://www.infinitioptics.com/sites/default/files/2023-06/Vega%20PTZ%20Series%20Brochure%202~10%20Jun2023.pdf}{https://www.infinitioptics.com/sites/default/files/2023-06/Vega\%20PTZ\%20Series\%20Brochure\%202~10\%20Jun2023.pdf}
-Specifications: 6.8 kg, 15.4–2075mm HD IR-Corrected Zoom Lens (with IZE doubler), 27°–0.2° Horizontal Field of View gives a 135X Zoom Range, 550X Zoom Ratio with 110° Wide-Angle Spotter Camera, 1280×1024 or 640×480 Cooled Thermal Imager, Thermal Lens Options Available with up to 1400mm 125° to 0.39° Thermal HFOV, Depending on Lens and Sensor, Optional ZLID™ Illumination for up to 6km of High Definition, NIR Imaging in Complete Darkness, Endless 360° Rotation Pan/Tilt with Speeds up to 0.001–100°/s, Up to 0.00036° Resolution Pan/Tilt with Low Backlash, Rugged IP66/67 and -50° to +65°C with Anti-Corrosion Finish
-
+    \item Standardized mounting points: 12mm Rail Payload Mount Kit (Alta X)
+    \begin{itemize}
+        \item Specifications: Compatible with payload mounting brackets using 12mm rails, Machined aluminum and carbon fiber for lightweight, rigid payload mounting, Weight in use: 6.6 oz / 186 g, Quick-release levers for easy adjustment, Includes fasteners and driver for installation
+    \end{itemize}
+    \item Power and data connections for various sensors/payloads:
+    \begin{itemize}
+        \item Mouser Electronics provides most connectors that might be necessary, and these will be included as needed.
+    \end{itemize}
+    \item Cameras: VEGA Ultra Long-Range Multi-Sensor PTZ Camera
+    \begin{itemize}
+        \item Specifications: 6.8 kg, 15.4–2075mm HD IR-Corrected Zoom Lens (with IZE doubler), 27°–0.2° Horizontal Field of View gives a 135X Zoom Range, 550X Zoom Ratio with 110° Wide-Angle Spotter Camera, 1280×1024 or 640×480 Cooled Thermal Imager, Thermal Lens Options Available with up to 1400mm 125° to 0.39° Thermal HFOV, Depending on Lens and Sensor, Optional ZLID™ Illumination for up to 6km of High Definition, NIR Imaging in Complete Darkness, Endless 360° Rotation Pan/Tilt with Speeds up to 0.001–100°/s, Up to 0.00036° Resolution Pan/Tilt with Low Backlash, Rugged IP66/67 and -50° to +65°C with Anti-Corrosion Finish
+    \end{itemize}
+     \item Payload Delivery Unit: Tarot Payload Quick Release System
+    \begin{itemize}
+        \item The electronic quick release electronic drop system is made of 6063 aviation aluminum and 304 stainless steel through CNC machining and assembly. The structure adopts the design principle of mechanical lever, which can reduce the output power required by the driving mechanism and make the throwing device volume. It is compact and the hinged structure of the lever will not be stuck due to the heavy weight of the load (the limit measured load is 43KG and the load can be smoothly retracted). You can mount multiple electronic drop systems of this series according to the usage scene environment, and can independently control the order of the throwing devices.
+    \end{itemize}
 \end{itemize}
 
 \subsubsection{Communication System}
 \begin{itemize}
-    \item Antenna \&Telemetry Module (for real-time data transmission):\\
-     MPSL900+2400 | Omni Directional UAV Drone Antenna\\
-\href{https://www.mpantenna.com/product/uav-antenna-mpsl900-2400/ }{https://www.mpantenna.com/product/uav-antenna-mpsl900-2400/ }\\
-Specifications: Ultra Light Weight, Gooseneck Style Coax Pigtail, Connectivity for any wireless network, Stable connections, Obstruction Penetrating transmit and receive, RoHS Compliant, Custom Configurations Available
+    \item 5G Receiver: Telit FN990 Fixed wireless access
+    \begin{itemize}
+        \item Specifications: Enterprise routers and gateways, Indoor and outdoor CPE, Professional broadcasting and surveillance Opt. 3a/3x and Opt. 2 for full network compatibility, Latest generation 4G and 5G Rel 16 4G Cat 20 up to 7xCA for FN990A40 4G Cat 19 up to 5xCA for FN990A28, Intraband and interband UL CA supported on 4G networks for improved throughput performance for uplink-centric applications (e.g., surveillance cameras and 4K/8K video streaming), 3G HSPA+ Rel 8 for fallback to legacy networks, Support for PCIe Gen 3 and USB 3.1 Gen 2 for maximum application design flexibility, Dedicated/shared (switchable) RF path/connector for GNSS L1 to allow total flexibility in the design phase and low losses whenever high sensitivity is required, Internal GNSS L1 LNA allows the use of less expensive passive antennas, lowering the total cost of ownership.
+    \end{itemize}
+    \item RF transmitter/receiver: RadioMaster XR3 Multi-Frequency RF Transceiver
+    \begin{itemize}
+        \item High-Performance MCU, Advanced Transceiver, Additional UART Port, Antenna Diversity, Secondary Port, Castled Pads
+    \end{itemize}
 \end{itemize}
