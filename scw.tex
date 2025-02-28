@@ -9,9 +9,9 @@
 \usepackage{makecell}
 \usepackage{soul} % add \st{} for strikthrough
 \usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{cite}
 \usepackage{indentfirst}
 % \setlength\parindent{0pt}
-\usepackage{cite}
 
 % report title
 \title{Assignment 1 - System Categroization \\ \textit{Security Categorization}\\ CSE 4380}
@@ -36,7 +36,7 @@ Members: 	& Obadah Al-Smadi\\
 			& Betim Hodza\\
 			& Elliot Mai\\
 			& Benjamin Niccum\\
-        	& Nicholas Pratt\\
+			& Nicholas Pratt\\
 Instructor: & Trevor Bakker\end{tabular}
 \end{center}
 
@@ -46,10 +46,10 @@ Instructor: & Trevor Bakker\end{tabular}
 \tableofcontents
 \newpage
 
-%%% List of figures and tables (optional)
-% \listoffigures
-% \listoftables
-% \newpage
+% List of figures and tables (optional)
+\listoffigures
+\listoftables
+\newpage
 
 \section{Executive Summary}
 \par This whitepaper evaluates the security classification of the 
@@ -84,8 +84,6 @@ frameworks, ensuring secure operations in defense environments.
 \subsection{Impact Levels (Confidentiality, Integrity, Availability)}
 \input{components/impact_levels.tex}
 
-
-
 \newpage
 
 \subsection{Reference Standards}
@@ -101,7 +99,7 @@ Categorization informs security control selection (NIST SP 800-53).
 Ongoing assessment and mitigation per FIPS 200 minimum security controls.
 
 \section{Conclusion}
-\par Example citation, remove later. \cite{fips199}
+\par Example citation, remove later. (4.2.2.1 \cite{fips199})
 \par (add conclusion)
 
 
