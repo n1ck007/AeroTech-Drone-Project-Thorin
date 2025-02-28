@@ -79,12 +79,47 @@ frameworks, ensuring secure operations in defense environments.
 
 \section{Security Categorization}
 
+\subsection{Information Types}
 
+\begin{itemize}
+    \item GNSS / GPS: Our GNSS device communicates using Chips-Message Robust Authentication (Chimera) and provides secure communication between the drone and the operator. It will switch to one of the 3 other modules if it fails or gets jammed.
+    \item LTE / 4G: Our LTE/4G communications uses TLS 1.2 and provides secure communication between the drone and the operator. It will independtly switch when jamming occurs or when loss of function occurs in one of the 3 modules of communication.
+    \item SatNav:  Our Satnav allows for Beyond-Line-of-Sight (BLOS) Operations, and will be encrypted with AES-256-GCM. it will also switch if one of the 3 modules fail.
+    \item (IMU) Intertial Measurement Unit: The IMU is used to measure the drones position, it contains critical data to keep the drone flying correctly. If tampered it could result in lost control of the system and potential loss of life.
+    \item Telementry Module: Used for real-time monitoring and secure data transmission between the drone and ground station. It utilizes AES-256 encryption with secure key exchange (Diffie-Hellman or ECC) to prevent interception and maintain integrity.
+    \item Flight Control board: Our Flight Control Board has Automatic actions on waypoints: suitable for cargo drop or camera shots, Transponder ADS-B IN for UTM (Unmanned Traffic Management),  and Flare and parachute activation for target drones. This module helps ensure availability of the drone and protects it from worst case scenarios. The confidentiality is important to consider for this device as it has data flowing into it that could be confidential and vital to its integrity (drone drop points and return points).
+    \item High-Res Camera: Our High-Resolution camera is equipped with advanced security features to ensure the integrity and confidentality of captured data. The camera stores data using AES-256-CBC on an full encrypted drive.
+    \item Thermal Imaging Camera: Thermal imaging sensor for night operations and heat detection. If sensor data intercepted it could reveal mission critical information.
+    \item AeroTech Flight Software: AeroTech's inhouse flight software is designed with security implementation first, making sure that the integrity of flight software is the upmost importance. As well as keeping confidential information secure and encrypted in memory. 
+    \item Encrypted Data (flight, image, comms data):  The Drone process image data and flight data, as well as has secure encrypted communication standards in place when in transit TLS 1.2 (telementry module). It also keeps data encrypted at rest as well when storing image data (AES-256-CBC).
+    \item LIDAR sensor: Used for topographical mapping and obstacle detection. If sensor data intercepted it could reveal mission critical information.
+    \item CPU: Used for executing all programs and commands on the drone.
+    \item RAM: Used for hold all process currently being executed.
+    \item SSD: Used as a non-volatile alternative to RAM for storing Operating System data as well as encryption key and authetication certificates..
+\end{itemize}
 
 \subsection{Impact Levels (Confidentiality, Integrity, Availability)}
 \input{components/impact_levels.tex}
 
-\newpage
+% Overall Categorization
+\subsection{Overall Categorization}
+\begin{center}
+\begin{tabular}{|p{4cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+\hline
+\rowcolor{navyblue!80}
+% header setup
+\color{white}\textbf{Overall Categorization} & 
+\color{white}\textbf{Confidentiality} & 
+\color{white}\textbf{Integrity} & 
+\color{white}\textbf{Availability} \\ \hline
+
+% Overall categorization info
+\makecell{High impact system: \\ NIST-800-60: 4.4.3} & 
+\makecell[l]{H} & 
+\makecell[l]{H} & 
+\makecell[l]{H} \\ \hline
+\end{tabular}
+\end{center}
 
 \subsection{Reference Standards}
 \begin{itemize}
