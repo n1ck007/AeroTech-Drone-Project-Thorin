@@ -11,51 +11,35 @@
     
     % GNSS/GPS Module
     \makecell{GNSS/GPS Module} & 
-    \makecell[l]{L\\ \scriptsize Minimal impact: GNSS coordinates\\ \scriptsize not sensitive (NIST 800-60 3.2)} & 
-    \makecell[l]{L\\ \scriptsize Redundant modules mitigate\\ \scriptsize tampering (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{L\\ \scriptsize Failover available\\ \scriptsize (NIST 800-60 4.2.2.3)} \\ \hline
+    \makecell[l]{L\\ \scriptsize Disclosure to the information sent between the GNSS \\ \scriptsize module will lead to minimal \\ \scriptsize impact in the system. Most \\ \scriptsize of the data sent between \\ \scriptsize the module is GNSS \\ \scriptsize coordinates they aren't highly \\ \scriptsize sensitive. (\cite{nistsp80060v1r1} 3.2)} & 
+    \makecell[l]{L\\ \scriptsize Manipulation of the module \\ \scriptsize could lead to minimal impact \\ \scriptsize in integrety, as we can switch \\ \scriptsize to another module instead of \\ \scriptsize using GNSS. (\cite{nistsp80060v1r1} 4.2.2.2)} & 
+    \makecell[l]{L\\ \scriptsize Due to loss of availability \\ \scriptsize there will be minimal impact \\ \scriptsize to the systems capability, \\ \scriptsize since we can switch to other \\ \scriptsize methods of communication. \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.3)} \\ \hline
     
     % LTE/4G
     \makecell{LTE/4G} & 
-    \makecell[l]{M\\ \scriptsize Telemetry interception risks\\ \scriptsize life (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{L\\ \scriptsize Redundancy minimizes\\ \scriptsize impact (NIST 4.2.2.2)} & 
-    \makecell[l]{L\\ \scriptsize Failover available\\ \scriptsize (NIST 4.2.2.3)} \\ \hline
+    \makecell[l]{M\\ \scriptsize Disclosure to the information \\ \scriptsize sent between the LTE/4G \\ \scriptsize module and the controller \\ \scriptsize could lead to Serious loss of \\ \scriptsize human life, as an adversary \\ \scriptsize can contain extra sensitive \\ \scriptsize data as it's not only being \\ \scriptsize used for control of the drone, \\ \scriptsize but in link with the \\ \scriptsize telementry module too.  \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{L\\ \scriptsize Manipulation of the module \\ \scriptsize could lead to minimal impact \\ \scriptsize in integrety, as we can switch \\ \scriptsize to another module instead of \\ \scriptsize LTE / 4G if there's \\ \scriptsize interference. (\cite{nistsp80060v1r1} 4.2.2.2)} & 
+    \makecell[l]{L\\ \scriptsize Due to loss of availability \\ \scriptsize there will be minimal impact \\ \scriptsize to the systems capability, \\ \scriptsize since we can switch to other \\ \scriptsize methods of communication. \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.3)} \\ \hline
     
     % SATNAV
     \makecell{SATNAV} & 
-    \makecell[l]{M\\ \scriptsize Telemetry interception risks\\ \scriptsize life (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{L\\ \scriptsize Redundancy minimizes\\ \scriptsize impact (NIST 4.2.2.2)} & 
-    \makecell[l]{L\\ \scriptsize Failover available\\ \scriptsize (NIST 4.2.2.3)} \\ \hline
+    \makecell[l]{L\\ \scriptsize TDisclosure to the \\ \scriptsize information sent between the \\ \scriptsize SatNav module will lead to \\ \scriptsize minimal impact in the system, \\ \scriptsize as most of the data is \\ \scriptsize satalite related navigation. \\ \scriptsize (\cite{nistsp80060v1r1} 3.2)} & 
+    \makecell[l]{L\\ \scriptsize Manipulation of the module \\ \scriptsize could lead to minimal impact \\ \scriptsize in integrety, it does limit the \\ \scriptsize range of the drone as there's \\ \scriptsize no over the horizion \\ \scriptsize communication that could be \\ \scriptsize done proficiently. \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.2)} & 
+    \makecell[l]{L\\ \scriptsize  Due to loss of availability \\ \scriptsize there will be minimal impact \\ \scriptsize to the systems capability, \\ \scriptsize since we can switch to other \\ \scriptsize methods of communication \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.3)} \\ \hline
     
     % IMU
     \makecell{IMU} & 
-    \makecell[l]{L\\ \scriptsize Orientation data non-sensitive\\ \scriptsize (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{H\\ \scriptsize Tampering causes crashes/loss\\ \scriptsize of life (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{H\\ \scriptsize Loss disables drone\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
+    \makecell[l]{L\\ \scriptsize If IMU data is disclosed \\ \scriptsize there's minimal impact of \\ \scriptsize confidentiality, the data is \\ \scriptsize mostly used for the drones \\ \scriptsize orientation for autoflight, or \\ \scriptsize normal flight procedures. \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{H\\ \scriptsize Severe impact may occur  \\ \scriptsize that could include a loss of \\ \scriptsize life if the IMU is manipulated. \\ \scriptsize  It's critical that we ensure \\ \scriptsize accurate measurements of \\ \scriptsize motion and orientation or the \\ \scriptsize drone will be inorperable.  \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.2)} & 
+    \makecell[l]{H\\ \scriptsize Without the IMU the drone \\ \scriptsize can't autocorrect itself, \\ \scriptsize which can cause it to crash \\ \scriptsize and not fly correctly even \\ \scriptsize with autopilot. (\cite{nistsp80060v1r1} 4.4.2.4)} \\ \hline
     
     % Telementry Module
     \makecell{Telementry Module} & 
-    \makecell[l]{L\\ \scriptsize Orientation data non-sensitive\\ \scriptsize (NIST 800-60 4.2.2.1)} & 
-    \makecell[l]{H\\ \scriptsize Tampering causes crashes/loss\\ \scriptsize of life (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{H\\ \scriptsize Loss disables drone\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
+    \makecell[l]{M\\ \scriptsize Disclosure of the information \\ \scriptsize transmitted between the \\ \scriptsize Module could lead to  \\ \scriptsize significant unauthorized  \\ \scriptsize access to sensitive data of the \\ \scriptsize operations being taken in \\ \scriptsize place. This could comprimise \\ \scriptsize the security of comms and \\ \scriptsize allow adversaries to intercept \\ \scriptsize transmissions and know the \\ \scriptsize purpose of a mission. \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.1)} & 
+    \makecell[l]{L\\ \scriptsize Changing the data \\ \scriptsize transmitted in the module \\ \scriptsize could lead to errors and \\ \scriptsize inconsistencies between \\ \scriptsize communication. This isn't \\ \scriptsize our only option to \\ \scriptsize communicate so it'll \\ \scriptsize minimally impact the \\ \scriptsize mission.  (\cite{nistsp80060v1r1} 4.2.1 Table 7.)} & 
+    \makecell[l]{L\\ \scriptsize Loss of availability would \\ \scriptsize have minimal impact of \\ \scriptsize overall system capabilities. \\ \scriptsize Alternative Communication \\ \scriptsize methods can be employed to \\ \scriptsize maintain operation. \\ \scriptsize  (\cite{nistsp80060v1r1} 4.2.1 Table 7, 4.2.2.3)} \\ \hline
     
-    % Flight Control Board
-    \makecell{Flight Control Board} & 
-    \makecell[l]{L\\ \scriptsize Waypoint exposure risks\\ \scriptsize (NIST 800-60 3.2)} & 
-    \makecell[l]{H\\ \scriptsize Integrity failure crashes drone\\ \scriptsize (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{H\\ \scriptsize Autopilot loss critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
     
-    % High-Res Camera
-    \makecell{High-Res Camera} & 
-    \makecell[l]{L\\ \scriptsize Waypoint exposure risks\\ \scriptsize (NIST 800-60 3.2)} & 
-    \makecell[l]{H\\ \scriptsize Integrity failure crashes drone\\ \scriptsize (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{H\\ \scriptsize Autopilot loss critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
-    
-    % Thermal Camera
-    \makecell{Thermal Camera} & 
-    \makecell[l]{L\\ \scriptsize Waypoint exposure risks\\ \scriptsize (NIST 800-60 3.2)} & 
-    \makecell[l]{H\\ \scriptsize Integrity failure crashes drone\\ \scriptsize (NIST 800-60 4.2.2.2)} & 
-    \makecell[l]{H\\ \scriptsize Autopilot loss critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
     
     
     \end{tabular}
@@ -70,7 +54,23 @@
     \color{white}\textbf{Integrity} & 
     \color{white}\textbf{Availability} \\ \hline
     
+    % Flight Control Board
+    \makecell{Flight Control Board} & 
+    \makecell[l]{L\\ \scriptsize Disclosure of information \\ \scriptsize processed on the board could \\ \scriptsize lead to minor operational \\ \scriptsize disruptions. This could \\ \scriptsize compromise the security of \\ \scriptsize the drones system allowing \\ \scriptsize for potential exploits to be \\ \scriptsize done. (NIST 800-60 3.2)} & 
+    \makecell[l]{H\\ \scriptsize Severe impact will occur if \\ \scriptsize the integrity of the FCB is \\ \scriptsize comprimised, as it's used for \\ \scriptsize not only autopilot but helps \\ \scriptsize assit in manual flight for an \\ \scriptsize operator. \\ \scriptsize (\cite{nistsp80060v1r1} 4.2.2.2 Table 7)} & 
+    \makecell[l]{H\\ \scriptsize Severe impact will occur if \\ \scriptsize the Availability of the FCB \\ \scriptsize is lost, similarly to Integrity \\ \scriptsize it will loose autopilot but \\ \scriptsize normal controls for flying \\ \scriptsize  the drone manually. \\ \scriptsize  (\cite{nistsp80060v1r1} 4.4.2.4)} \\ \hline
+
+    % High-Res Camera
+    \makecell{High-Res Camera} & 
+    \makecell[l]{L\\ \scriptsize The images themselves can \\ \scriptsize contain confidential \\ \scriptsize information, leading to \\ \scriptsize potential mission operations \\ \scriptsize distruptions. But in terms of \\ \scriptsize comprimises to operations \\ \scriptsize this will be minimal. \\ \scriptsize  (\cite{nistsp80030r1}4.2.2.1.)} & 
+    \makecell[l]{L\\ \scriptsize Minimal impact of the system \\ \scriptsize will occur for tampering \\ \scriptsize image data for the camera. \\ \scriptsize We have other camera's to \\ \scriptsize switch to and from, and it \\ \scriptsize won't disrupt operations \\ \scriptsize much. (\cite{nistsp80060v1r1} 4.2.2.2)} & 
+    \makecell[l]{L\\ \scriptsize Minimal impact could occur \\ \scriptsize for the loss of availability of \\ \scriptsize the camera, it will impact \\ \scriptsize mission capability as if \\ \scriptsize we switch to thermal \\ \scriptsize imaging camera, it won't \\ \scriptsize be the best way to operate \\ \scriptsize the drone (\cite{nistsp80060v1r1}4.4.2.3)} \\ \hline
     
+    % Thermal Camera
+    \makecell{Thermal Camera} & 
+    \makecell[l]{L\\ \scriptsize Waypoint exposure risks\\ \scriptsize (NIST 800-60 3.2)} & 
+    \makecell[l]{H\\ \scriptsize Integrity failure crashes drone\\ \scriptsize (NIST 800-60 4.2.2.2)} & 
+    \makecell[l]{H\\ \scriptsize Autopilot loss critical\\ \scriptsize (NIST 800-60 4.4.2.4)} \\ \hline
     
     % CPU
     \makecell{CPU} & 
